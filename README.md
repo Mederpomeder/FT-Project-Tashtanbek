@@ -4,7 +4,7 @@
 **University:** International Ala-Too University  
 **Group:** EEAIR24  
 **Date:** 2025  
-**Demo Videos** 
+**Demo Videos:** https://drive.google.com/drive/folders/1tPDS4UWKTIs76ECvT-CGCigkDOEJd5cr?usp=sharing
 ---
 
 ## 📘 Project Description
@@ -19,6 +19,8 @@ The system features:
 - Fully integrated power system with DC-DC buck converter  
 
 This project demonstrates practical robotics, embedded systems design, and IoT communication.
+
+You can watch the demo video here: https://drive.google.com/drive/folders/1tPDS4UWKTIs76ECvT-CGCigkDOEJd5cr?usp=sharing
 
 ---
 
