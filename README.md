@@ -1,5 +1,8 @@
 # 🚮 Smart Trash Bin – Intelligent Robotic Waste System
 
+<img width="500" height="668" alt="image" src="https://github.com/user-attachments/assets/9cd59295-96c1-4841-ad5e-6d6a24facac7" />
+
+
 **Developed by:** Dzhanteliev Adilkhan, Sakybaev Meder, Usenkanov Ularbek  
 **University:** International Ala-Too University  
 **Group:** EEAIR24  
@@ -252,4 +255,19 @@ if command is '0'–'9': change speed
 ```
 
 
+### Some pictures of the project assembly process:
 
+
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/9328ab6f-812e-49f1-b6ed-277613c155c2" />
+
+
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/4ca9ac84-5166-4d0a-af3c-e4d9bd5a9a5b" />
+
+
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/a23b8f01-4fcf-4fc8-accd-389f1fbc1a9a" />
+
+
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/4e036401-6d64-4096-9a2f-bb682b768814" />
+
+
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/4f8b4899-79d4-44a3-8b36-ceb2f82a044f" />
