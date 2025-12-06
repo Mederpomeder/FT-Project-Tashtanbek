@@ -2,6 +2,9 @@
 
 <img width="500" height="668" alt="image" src="https://github.com/user-attachments/assets/9cd59295-96c1-4841-ad5e-6d6a24facac7" />
 
+<img width="481" height="725" alt="image" src="https://github.com/user-attachments/assets/f7a0352d-ae7e-49cd-b9b1-630e1385f7cf" />
+
+
 
 **Developed by:** Dzhanteliev Adilkhan, Sakybaev Meder, Usenkanov Ularbek  
 **University:** International Ala-Too University  
