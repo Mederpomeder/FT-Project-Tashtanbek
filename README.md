@@ -175,14 +175,79 @@ We installed a **XL4015E1 DC-DC buck converter**, delivering a stable **5V, up t
 
 ---
 
-## 📄 Example Sensor Logic (Pseudo):
+## 🧠 Example Sensor Logic
 
-```text
-if distance < 20cm AND gesture duration < 1s:
-    open lid
+### 🔹 1. **Distance Measurement**
+```
+long getDistance(trig, echo) {
+  trigger LOW → HIGH (10 µs pulse)
+  pulseIn(echo, HIGH) → duration
+  distance_cm = duration / 58
+}
 
-if distance < 20cm AND gesture duration >= 1s:
-    activate tightening servos
+```
 
-if inner_distance <= 10cm:
-    turn LED on
+### 🔹 2. Fullness Detection
+```
+if (innerDist > 0 AND innerDist <= BIN_FULL_DISTANCE):
+    LED_FULL = ON
+else:
+    LED_FULL = OFF
+```
+
+### 🔹 3. Hand Gesture Detection Logic
+```
+if (handDetected AND NOT handPresent AND NOT sequenceRunning):
+    handPresent = true
+    handStartTime = millis()
+
+if (handDetected AND handPresent AND NOT sequenceRunning):
+    holdTime = millis() - handStartTime
+
+    if (holdTime >= HOLD_THRESHOLD):
+        sequenceRunning = true
+
+        lidOpen()
+        wait 2 sec
+        runQuartet()     // 4 servos tighten bag
+        wait 1 sec
+        lidClose()
+
+        sequenceRunning = false
+        handPresent = false
+........
+```
+
+### 🔹 4. Short Gesture (hand removed before 3 sec)
+```
+if (NOT handDetected AND handPresent AND NOT sequenceRunning):
+    holdTime = millis() - handStartTime
+    handPresent = false
+
+    if (holdTime < HOLD_THRESHOLD):
+        sequenceRunning = true
+        lidOpen()
+        wait 700 ms
+        lidClose()
+        sequenceRunning = false
+```
+
+### 🔹 5. Driving System Bluetooth Commands
+```
+if command == 'F': motors FORWARD
+if command == 'B': motors BACKWARD
+if command == 'L': turn LEFT
+if command == 'R': turn RIGHT
+if command == 'G': forward-left (left motor slow)
+if command == 'H': forward-right (right motor slow)
+if command == 'I': backward-left
+if command == 'J': backward-right
+if command == 'S': STOP motors
+if command == 'Y': buzzer beep sequence
+if command == 'X': LED ON
+if command == 'x': LED OFF
+if command is '0'–'9': change speed
+```
+
+
+
