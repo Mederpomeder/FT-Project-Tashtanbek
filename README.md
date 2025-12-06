@@ -3,7 +3,7 @@
 **Developed by:** Dzhanteliev Adilkhan, Sakybaev Meder, Usenkanov Ularbek  
 **University:** International Ala-Too University  
 **Group:** EEAIR24  
-**Date:** 2025  
+**Date:** October 2025 - December 2025  
 **Demo Videos:** https://drive.google.com/drive/folders/1tPDS4UWKTIs76ECvT-CGCigkDOEJd5cr?usp=sharing
 ---
 
